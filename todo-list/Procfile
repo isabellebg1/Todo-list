@@ -1,1 +1,1 @@
-web: java -Xmx512m -jar build/libs/todo-list-0.0.1-SNAPSHOT.jar --server.port=8080
+web: java -Dserver.port=8080 -Dspring.datasource.url=jdbc:postgresql://postgres.railway.internal:5432/railway -Dspring.datasource.username=postgres -Dspring.datasource.password=cgyNFgrPFZGqoNHgBKIZwViCRGFXArIQ -jar build/libs/todo-list-0.0.1-SNAPSHOT.jar
